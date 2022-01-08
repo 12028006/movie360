@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark text-light">
+  <a class="navbar-brand h1">Movie360</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown text-light">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movie
+        </a>
+        <div class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Bollywood</a>
+          <a class="dropdown-item" href="#">Hollywood</a>
+          <a class="dropdown-item" href="#">South Indian</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled text-light" href="#">Latest</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-light my-2 my-sm-0 ml-2" type="submit">Logout</button>
+    </form>
+  </div>
+</nav>
+<div class="movie-poster d-flex justify-content-center mt-2">
+  <img src="../assets/img/endgame.jpg" alt="Endgame Poster" id="poster-id" />
+</div>
+
+<a routerLink="create" class="btn btn-dark btn-lg btn-block mt-3">Add Movie</a>
+ 
+<a routerLink="read" class="btn btn-dark btn-lg btn-block mt-3">Display Movie</a>
+<router-outlet></router-outlet>
+<hr>
+<footer class="d-flex justify-content-center">
+  <h5 id="footer">Copyright 2021 Movie360, All right reserved  </h5>
+</footer>
